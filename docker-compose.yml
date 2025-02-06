@@ -1,0 +1,14 @@
+services:
+  fabric:
+    build: ./fabric
+    restart: unless-stopped
+    ports:
+      - 5173:5173
+    volumes:
+      - ./config:/root/.config/fabric
+#    networks:
+#      - proxy-tier
+#
+#networks:
+#  proxy-tier:
+#    external: true
