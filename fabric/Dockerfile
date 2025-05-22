@@ -10,7 +10,7 @@ RUN git clone https://github.com/danielmiessler/fabric.git /web
 
 RUN apt-get update && apt-get upgrade -y
 
-RUN apt-get install -y npm
+RUN apt-get install -y npm tailscale
 
 RUN cd /web/web && npm install
 
